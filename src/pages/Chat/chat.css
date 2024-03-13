@@ -1,0 +1,39 @@
+.header {
+  padding: var(--pd-small) var(--pd);
+  flex-shrink: 0;
+  background-color: var(--grey-dark);
+}
+
+.chat_area {
+  flex-grow: 1;
+  
+}
+
+.chat_conversation {
+  flex-grow: 1;
+  padding: var(--pd) var(--pd);
+  max-height: 578px;
+}
+
+.chat_input {
+  padding: var(--pd);
+  border-top: 2px solid var(--grey-dark);
+}
+
+.chat_input input {
+  padding: var(--pd);
+}
+
+.profile_btn {
+  padding: var(--pd-small-very);
+}
+
+.profile_btn .profile_pic {
+  width: 100%;
+  height: 100%;
+}
+
+.chat_begin h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}

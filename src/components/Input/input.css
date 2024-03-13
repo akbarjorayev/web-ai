@@ -1,0 +1,36 @@
+input {
+  border-radius: var(--bd-ra-small);
+  background-color: var(--main-color);
+  border: 1px solid var(--grey-dark);
+  padding: var(--pd-small-very) var(--pd-small);
+  width: 100%;
+}
+
+input:hover {
+  background-color: var(--main-color-light);
+}
+
+input:not(.error):focus {
+  border-color: var(--selection-color);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--main-color) inset;
+  -webkit-text-fill-color: var(--theme-color-not) !important;
+  caret-color: var(--theme-color-not);
+  font-size: inherit;
+}
+
+input::placeholder {
+  color: inherit;
+  font-size: 0.9em;
+}
+
+/* types */
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="file"] {
+  display: none;
+}

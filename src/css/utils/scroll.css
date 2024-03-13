@@ -1,0 +1,14 @@
+.scroll_v {
+  overflow: hidden auto;
+}
+
+.scroll_v::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--grey-dark);
+  border-radius: 1em;
+}
+
+.scroll_v::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 1em;
+}

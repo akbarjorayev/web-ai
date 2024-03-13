@@ -1,0 +1,29 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color: #000;
+    --theme-color-not: #fff;
+  }
+
+  :root {
+    --grey: #3e3e3e;
+    --grey-light: #5c5c5c;
+    --grey-dark: #343434;
+  }
+
+  :root {
+    --main-color: #25468e;
+    --main-color-light: color-mix(in srgb, var(--main-color) 95%, #fff 5%);
+    --main-color-dark: color-mix(in srgb, var(--main-color) 80%, #000 20%);
+  }
+
+  :root {
+    --selection-color: color-mix(in srgb, var(--main-color) 50%, #55c8b6 50%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --theme-color: #fff;
+    --theme-color-not: #000;
+  }
+}

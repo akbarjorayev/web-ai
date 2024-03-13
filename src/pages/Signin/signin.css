@@ -1,0 +1,63 @@
+.login_area {
+  border-radius: var(--bd-ra);
+  background-color: var(--grey-dark);
+  padding: var(--pd);
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.profile_pic_area {
+  position: relative;
+}
+
+.profile_pic_area .btns {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.profile_pic_area .btns button {
+  scale: 0;
+  animation: scale 0.3s ease forwards;
+}
+
+@keyframes scale {
+  to {
+    scale: 1;
+  }
+}
+
+.profile_btn {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2em;
+}
+
+.profile_pic::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.profile_pic:hover::after {
+  opacity: 0.3;
+}
+
+.profile_pic_area .profile_pic_img {
+  opacity: 0;
+  animation: opacity 0.3s ease forwards;
+}
+
+@keyframes opacity {
+  to {
+    opacity: 1;
+  }
+}

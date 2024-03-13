@@ -1,0 +1,35 @@
+.chat {
+  padding: var(--pd-small-very) var(--pd);
+}
+
+.chat .chat_conversation_text {
+  width: 100%;
+  text-wrap: wrap;
+  margin: 0;
+}
+
+.chat .chat_conversation_text *:first-child {
+  margin-top: 0;
+}
+
+.chat .chat_conversation_text *:last-child {
+  margin-bottom: 0;
+}
+
+.chat .chat_txt {
+  padding: var(--pd-small-very) var(--pd);
+  border: 1px solid var(--main-color);
+  border-radius: var(--bd-ra);
+  width: 100%;
+}
+
+.chat .profile_pic,
+.chat button {
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+
+.chat button {
+  height: max-content;
+}

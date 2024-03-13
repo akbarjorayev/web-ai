@@ -1,0 +1,27 @@
+button {
+  width: var(--btn-size);
+  height: var(--btn-size);
+  border-radius: var(--bd-ra-small);
+  background-color: var(--main-color);
+  border: 1px solid var(--grey-dark);
+  padding: var(--pd-small-very) var(--pd-small);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: var(--main-color-light);
+}
+
+button:active {
+  border-color: var(--selection-color);
+}
+
+.btn_red {
+  background-color: #d43f3f;
+}
+
+.btn_red:hover {
+  background-color: #e25555;
+}

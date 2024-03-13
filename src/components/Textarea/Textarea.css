@@ -1,0 +1,23 @@
+textarea {
+  border-radius: var(--bd-ra-small);
+  background-color: var(--main-color);
+  border: 1px solid var(--grey-dark);
+  padding: var(--pd-small-very) var(--pd-small);
+  width: 100%;
+  min-height: 70px;
+  max-height: 150px;
+  resize: none;
+}
+
+textarea:hover {
+  background-color: var(--main-color-light);
+}
+
+textarea:not(.error):focus {
+  border-color: var(--selection-color);
+}
+
+textarea::placeholder {
+  color: inherit;
+  font-size: 0.9em;
+}

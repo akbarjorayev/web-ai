@@ -1,0 +1,44 @@
+/* lists */
+.list_v,
+.list_v_big,
+.list_v_small {
+  display: flex;
+  flex-direction: column;
+}
+
+.list_v > *:not(:last-child) {
+  margin-bottom: var(--margin-small);
+}
+
+.list_v_big > *:not(:last-child) {
+  margin-bottom: var(--margin);
+}
+
+.list_v_small > *:not(:last-child) {
+  margin-bottom: var(--margin-small);
+}
+
+.list_h,
+.list_h_big,
+.list_h_small {
+  display: flex;
+}
+
+.list_h > *:not(:last-child) {
+  margin-right: var(--margin-small);
+}
+
+.list_h_big > *:not(:last-child) {
+  margin-right: var(--margin);
+}
+
+.list_h_small > *:not(:last-child) {
+  margin-right: var(--margin-small);
+}
+
+:root {
+  /* margin */
+  --margin: 12px;
+  --margin-small: 4px;
+  --margin-big: 20px;
+}

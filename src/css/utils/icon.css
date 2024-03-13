@@ -1,0 +1,9 @@
+[class^='material-symbols'] {
+  display: grid;
+  place-items: center;
+  font-size: inherit;
+}
+
+.icon_big {
+  font-size: 1.4em;
+}
