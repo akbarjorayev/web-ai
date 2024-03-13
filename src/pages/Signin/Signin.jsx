@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Button from '../../components/Button/Button'
 import Input from '../../components/Input/Input'
+import Loader from '../../components/Loader/Loader'
 
 import * as db from '../../js/db.js'
 
@@ -11,6 +12,7 @@ function Signin() {
   const lnameInput = useRef(null)
   const fileInput = useRef(null)
   const [profilePicImg, setProfilePicImg] = useState('')
+  const [creatingAcc, setCreatingAcc] = useState(false)
 
   useEffect(() => {
     fileInput.current.value = ''
@@ -67,6 +69,7 @@ function Signin() {
   }
 
   async function createAccount() {
+    setCreatingAcc(true)
     const account = {
       fname: fnameInput.current.value.trim(),
       lname: lnameInput.current.value.trim(),
@@ -151,6 +154,7 @@ function Signin() {
         <div className="df_jc_fe">
           <Button onClick={checkInputs}>Create</Button>
         </div>
+        {creatingAcc && <Loader>Creating account</Loader>}
       </div>
     </div>
   )

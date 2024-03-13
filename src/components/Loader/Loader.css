@@ -1,0 +1,32 @@
+.loader_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+
+.loader_spinner {
+  width: var(--loader-size);
+  height: var(--loader-size);
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  border-top: none;
+  border-right: none;
+  animation: loaderSpinner 0.3s linear infinite;
+}
+
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --loader-size: 100px;
+}

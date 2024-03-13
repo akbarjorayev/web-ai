@@ -1,7 +1,9 @@
 .login_area {
+  position: relative;
   border-radius: var(--bd-ra);
   background-color: var(--grey-dark);
   padding: var(--pd);
+  overflow: hidden;
 }
 
 .title {
