@@ -154,7 +154,7 @@ function Signin() {
         <div className="df_jc_fe">
           <Button onClick={checkInputs}>Create</Button>
         </div>
-        {creatingAcc && <Loader>Creating account</Loader>}
+        {creatingAcc && <Loader size='50px'>Creating account</Loader>}
       </div>
     </div>
   )

@@ -22,11 +22,11 @@ function App() {
     hasAccount()
   }, [])
 
-  if (!loaded) return <Loader loaderSize="100px">Checking your account</Loader>
+  if (!loaded) return <Loader size="100px">Checking your account</Loader>
 
   return (
     <>
-      <Suspense fallback={<Loader loaderSize="100px">Loading pages</Loader>}>
+      <Suspense fallback={<Loader size="100px">Loading pages</Loader>}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={hasAccount ? <Chat /> : <Signin />} />
